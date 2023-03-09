@@ -1,0 +1,116 @@
+{
+    "swagger":"2.0",
+    "info": {
+        "description":"user management system with react and node js",
+        "title":"User management system"
+    },
+    "tags":[
+        {
+            "name":"USER"
+        }
+    ],
+    "paths":{
+        "/signup":{
+            "post":{
+                "tags":[
+                    "USER"
+                ],
+                "summary": "signing up a user  ",
+                "consumes":[
+                    "application/json"
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "parameters":[
+                    {
+                        "in":"body",
+                        "name":"body",
+                        "type":"object",
+                        "properties":{
+                            "username":{
+                                "type":"string",
+                                "required":true
+                            },
+                            "email":{
+                                "type":"string",
+                                "required":true
+                            },
+                            "phone":{
+                                "type":"string",
+                                "required":true
+                            },
+                            "password":{
+                                "type":"string",
+                                "required":true
+                            },
+                            "confirmPassword":{
+                                "type":"string",
+                                "required":true
+                            }
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                    "description":"Success"
+                },
+                "201":{
+                    "description":"Created"
+                },
+                "400":{
+                    "description":"Invalid Data"
+                },
+                "500":{
+                    "description":"Internal server error"
+                }
+            }
+            }
+        },
+        "/login":{
+            "post":{
+                "tags":[
+                    "USER"
+                ],
+                "summary": "Login a user  ",
+                "consumes":[
+                    "application/json"
+                ],
+                "produces":[
+                    "application/json"
+                ],
+                "parameters":[
+                    {
+                        "in":"body",
+                        "name":"body",
+                        "type":"object",
+                        "properties":{
+                            "email":{
+                                "type":"string",
+                                "required":true
+                            },
+                            "password":{
+                                "type":"string",
+                                "required":true
+                            }
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                    "description":"Success"
+                },
+                "201":{
+                    "description":"Created"
+                },
+                "400":{
+                    "description":"Invalid Data"
+                },
+                "500":{
+                    "description":"Internal server error"
+                }
+            }
+            }
+        }
+    }    
+}      

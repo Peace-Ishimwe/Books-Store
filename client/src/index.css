@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body::-webkit-scrollbar-track {
+    background-color: #242a2df1;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #606d74;
+    border-radius: 10px;
+  }
+  
+body::-webkit-scrollbar-corner {
+    background-color: #242a2df1;
+  }
+  
+body::-webkit-scrollbar{
+    width: 10px;
+} */
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.login , .signup{
+  background-image: url('../src/images/books.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main--hero{
+  background-image: url('/src/images/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
