@@ -33,10 +33,10 @@ export default function Main () {
                     Contact us
                 </button>
             </div>
-            <div className='sm:w-7/12 xs:w-full mx-auto py-6 px-3 rounded-md h-[300px] bg-[#ffffff9e]  mt-10 xl:mr-14 flex flex-col'>
+            <div className='sm:w-7/12 xs:w-full mx-auto py-6 px-3 rounded-md h-[300px] border-2 border-white text-white mt-10 xl:mr-14 flex flex-col'>
                 <div className='h-[80%]'>
                     <h1 className="font-bold text-3xl mx-auto w-fit mb-2" >Qoutes</h1>
-                    <p className='text-slate-900 text-lg text-center'>{qoute}</p>
+                    <p className='text-lg text-center'>{qoute}</p>
                     <p className='font-semibold text-center mt-2'>---{author}----</p>
                 </div>
                 <div>
