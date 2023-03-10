@@ -4,6 +4,7 @@ import Login from "./pages/login";
 import ErrorPage from "./pages/404";
 import Signup from "./pages/signup";
 import Landing from "./pages/landing";
+import Homepage from "./pages/homepage";
 const App = () => {
   return(
     <div>
@@ -12,6 +13,7 @@ const App = () => {
           <Route path="/" element={<Landing/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/homepage" element={<Homepage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
